@@ -1,0 +1,93 @@
+.backgroundGradient {
+    background-image: linear-gradient(#b8b8b8,white);
+}
+.tab-program {
+    display: none;
+}
+
+.joffrey-program-sidenav {
+
+    height: 100%;
+    width: 325px;
+    position: fixed;
+    right: -290px;
+    z-index: 999;
+    padding: 15px;
+	background-size: cover; 
+	background-image: url('https://www.joffreyballetschool.com/summer/audition/audcoverfin.gif');
+    text-align: center;
+    opacity: 1;
+    transition:opacity 1s ease, right 2s ease;
+
+
+}
+    
+.joffrey-program-sidenav-active {
+    height: 100%;
+    width: 325px;
+    position: fixed;
+    z-index: 999;
+    padding: 15px;
+    background-size: cover; 
+	background-image: url('https://www.joffreyballetschool.com/summer/audition/audcoverfin.gif');
+    opacity: 1;
+    text-align: center;
+    /*width: 40%;*/
+    right: 0;
+    transition:opacity 1s ease,right 2s ease; 
+}
+
+.transparent-program-active {
+    opacity: 1;
+    transition: opacity 2s ease;
+}
+.transparent-program {
+    opacity: 0;
+    transition: opacity 1s ease 1s;
+}
+
+#findprogram-btn
+{
+    position: absolute;
+    left: -190px;
+    top: 35%;
+    opacity: 1;
+    /* height: 100px; */
+    background-color: #4198c2b5;
+    border: 0px;
+    transform: rotate(270deg);
+    font-size: 30px;
+    color: white;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+.btnprg {
+    display: inline-block;
+padding: 15px;
+        background-color: #398dbab0;
+border: 0px;
+    font-weight: bold;
+color: #fff;
+}
+
+.joffrey-labels {
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width:376px)
+{
+    #findprogram-btn
+    {
+        left: -100px;
+        position: absolute;
+        padding-bottom: 0;
+        padding-top: 0;
+        font-size: 10px;
+    }
+    
+    .joffrey-program-sidenav
+    {
+        right: -335px;
+    }
+}
